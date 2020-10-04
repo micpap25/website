@@ -2,11 +2,11 @@
 title: Fetch data from the internet
 description: How to fetch data over the internet using the http package.
 prev:
-  title: Send data to a new screen
-  path: /docs/cookbook/navigation/passing-data
+  title: Delete data on the internet
+  path: /docs/cookbook/networking/delete-data
 next:
-  title: Send data to the internet
-  path: /docs/cookbook/networking/send-data
+  title: Make authenticated requests
+  path: /docs/cookbook/networking/authenticated-requests
 ---
 
 Fetching data from the internet is necessary for most apps.
@@ -40,6 +40,15 @@ Import the http package.
 <!-- skip -->
 ```dart
 import 'package:http/http.dart' as http;
+```
+
+Additionally, in your AndroidManifest.xml file, 
+add the Internet permission.
+
+<!-- skip -->
+```xml
+<!-- Required to fetch data from the internet. -->
+<uses-permission android:name="android.permission.INTERNET" />
 ```
 
 ## 2. Make a network request
@@ -117,6 +126,8 @@ function to return a `Future<Album>`:
 
 <!-- skip -->
 ```dart
+import 'dart:convert';
+
 Future<Album> fetchAlbum() async {
   final response = await http.get('https://jsonplaceholder.typicode.com/albums/1');
 
@@ -317,7 +328,7 @@ class _MyAppState extends State<MyApp> {
 [JSONPlaceholder]: https://jsonplaceholder.typicode.com/
 [`http`]: {{site.pub-pkg}}/http
 [`http.get()`]: {{site.pub-api}}/http/latest/http/get.html
-[`http` package]: {{site.pub-pkg}}/http#-installing-tab-
+[`http` package]: {{site.pub-pkg}}/http/install
 [`InheritedWidget`]: {{site.api}}/flutter/widgets/InheritedWidget-class.html
 [Introduction to unit testing]: /docs/cookbook/testing/unit/introduction
 [`initState()`]: {{site.api}}/flutter/widgets/State/initState.html

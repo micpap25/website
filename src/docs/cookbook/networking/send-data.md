@@ -2,11 +2,11 @@
 title: Send data to the internet
 description: How to use the http package to send data over the internet.
 prev:
-  title: Fetch data from the internet
-  path: /docs/cookbook/networking/fetch-data
+  title: Parse JSON in the background
+  path: /docs/cookbook/networking/background-parsing
 next:
-  title: Make authenticated requests
-  path: /docs/cookbook/networking/authenticated-requests
+  title: Update data over the internet
+  path: /docs/cookbook/networking/update-data
 ---
 
 Sending data to the internet is necessary for most apps.
@@ -341,7 +341,7 @@ class _MyAppState extends State<MyApp> {
 [`FutureBuilder`]: {{site.api}}/flutter/widgets/FutureBuilder-class.html
 [`http`]: {{site.pub-pkg}}/http
 [`http.post()`]: {{site.pub-api}}/http/latest/http/post.html
-[`http` package]: {{site.pub-pkg}}/http#-installing-tab-
+[`http` package]: {{site.pub-pkg}}/http/install
 [`InheritedWidget`]: {{site.api}}/flutter/widgets/InheritedWidget-class.html
 [Introduction to unit testing]: /docs/cookbook/testing/unit/introduction
 [`initState()`]: {{site.api}}/flutter/widgets/State/initState.html

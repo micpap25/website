@@ -117,7 +117,7 @@ The worst frame rasterization time is a nice metric from such integration tests 
 
 [Flutter Gallery]: {{site.github}}/flutter/flutter/tree/master/dev/integration_tests/flutter_gallery
 [`flutter_gallery_sksl_warmup__transition_perf`]: {{site.github}}/flutter/flutter/blob/master/dev/devicelab/bin/tasks/flutter_gallery_sksl_warmup__transition_perf.dart
-[`flutter_gallery_sksl_warmup_ios32__transition_perf`]: {{site.github}}/flutter/blob/master/dev/devicelab/bin/tasks/flutter_gallery_sksl_warmup_ios32__transition_perf.dart
+[`flutter_gallery_sksl_warmup_ios32__transition_perf`]: {{site.github}}/flutter/flutter/blob/master/dev/devicelab/bin/tasks/flutter_gallery_sksl_warmup_ios32__transition_perf.dart
 [integration tests]: /docs/cookbook/testing/integration/introduction
 [`transitions_perf_test.dart`]: {{site.github}}/flutter/flutter/blob/master/dev/integration_tests/flutter_gallery/test_driver/transitions_perf_test.dart
 
@@ -153,9 +153,6 @@ The worst frame rasterization time is a nice metric from such integration tests 
    rasterization time in release mode; the worst frame rasterization time is
    a good indicator on how severe the shader compilation jank is.)
 
-[`FrameTiming`]: {{site.api}}/flutter/dart-ui/FrameTiming-class.html
-[SkSL-based warmup issue]: {{site.github}}/flutter/flutter/issues/53607#issuecomment-608587484
-
 3. **SkSL warm-up doesn't help newer iPhones using Metal.**<br>
    Flutter recently migrated from OpenGL to Metal for all newer iOS
    devices. However, Skia currently only implements the SkSL warm-up for
@@ -167,6 +164,9 @@ The worst frame rasterization time is a nice metric from such integration tests 
    shader compilation jank on newer iPhones, please leave feedback on
    [Issue 61045][], and we can help you turn on OpenGL for your app.
 
+
+[`FrameTiming`]: {{site.api}}/flutter/dart-ui/FrameTiming-class.html
+[SkSL-based warmup issue]: {{site.github}}/flutter/flutter/issues/53607#issuecomment-608587484
 [GitHub issue]: {{site.github}}/flutter/flutter/issues
 [Issue 61045]: {{site.github}}/flutter/flutter/issues/61045
 

@@ -1,7 +1,7 @@
 ---
 title: Flutter documentation
 short-title: Docs
-description: The landing page for Flutter documentation.
+description: Get started with Flutter. Widgets, examples, updates, and API docs to help you write your first Flutter app.
 ---
 
 {% for card in site.data.docs_cards -%}
@@ -25,7 +25,7 @@ description: The landing page for Flutter documentation.
 ## What's new on this site
 
 To see changes to the site since our last release,
-see the [What's new archive][].
+see [What's new][].
 
 ## New to Flutter?
 
@@ -35,9 +35,9 @@ here are some next steps.
 
 ### Docs
 
-Coming from another platform? Check out:
-[Android][], [iOS][], [Web][], [React Native][],
-[Xamarin.Forms][]
+Coming from another platform? Check out Flutter for:
+[Android][], [iOS][], [Web][], [React Native][] and
+[Xamarin.Forms][] developers.
 
 [Building layouts][]
 : Learn how to create layouts in Flutter,
@@ -45,7 +45,7 @@ Coming from another platform? Check out:
 
 [Understanding constraints][]
 : Once you understand that "Constraints
-  flow up. Sizes flow down. Parents set
+  flow down. Sizes flow up. Parents set
   positions", then you are well on your
   way to understanding Flutter's layout model.
 
@@ -60,25 +60,18 @@ Coming from another platform? Check out:
 
 ### Videos
 
-We also have some helpful videos on our
-[Flutter YouTube channel][]! In particular, check
-out the Flutter in Focus series,
-and learn about other series on our [videos][] page.
+We also have some helpful videos on our [Flutter YouTube channel][]! In particular, check out the [Flutter in Focus series][], and learn about other series on our [videos][] page.
 
-First up, why use Flutter? What makes it different than other
-app frameworks?
+First up, why use Flutter? What makes it different than other app frameworks?
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/l-YO9CmaSUM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
-How is Flutter different for app development?
+
+Flutter in Focus: Learn Flutter features in 10 minutes or less.
 
 <iframe style="max-width: 100%" width="560" height="315" src="https://www.youtube.com/embed/wgTBLj7rMPM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-Flutter in Focus: Learn Flutter features in 10 minutes or less.<br>
-[Flutter in Focus playlist][]
 
-In Flutter, "everything is a widget"! If you want to better
-understand the two kinds of widgets, Stateless and Stateful,
-see the following videos,
-part of the [Flutter in Focus][] series.
+In Flutter, "everything is a widget"! If you want to better understand
+the two kinds of widgets, Stateless and Stateful, see the following videos,
 
 <iframe style="max-width: 100%" width="560" height="315" src="https://www.youtube.com/embed/wE7khGHVkYY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <iframe width="560" height="315" src="https://www.youtube.com/embed/AqCMFXEmf3w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -111,7 +104,7 @@ You might also find these docs useful:
 [FAQ]: /docs/resources/faq
 [flutter-announce]: https://groups.google.com/forum/#!forum/flutter-announce
 [Flutter in Focus]: https://www.youtube.com/playlist?list=PLjxrf2q8roU2HdJQDjJzOeO6J3FoFLWr2
-[Flutter in Focus playlist]: https://www.youtube.com/playlist?list=PLjxrf2q8roU2HdJQDjJzOeO6J3FoFLWr2
+[Flutter in Focus series]: https://www.youtube.com/playlist?list=PLjxrf2q8roU2HdJQDjJzOeO6J3FoFLWr2
 [Flutter YouTube channel]: {{site.social.youtube}}
 [Get started]: /docs/get-started/install
 [iOS]: /docs/get-started/flutter-for/ios-devs
@@ -122,7 +115,6 @@ You might also find these docs useful:
 [Using packages]: /docs/development/packages-and-plugins/using-packages
 [videos]: /docs/resources/videos
 [Web]: /docs/get-started/flutter-for/web-devs
-[What's new archive]: /docs/whats-new-archive
+[What's new]: /docs/whats-new
 [Write your first Flutter app]: /docs/get-started/codelab
 [Xamarin.Forms]: /docs/get-started/flutter-for/xamarin-forms-devs
-

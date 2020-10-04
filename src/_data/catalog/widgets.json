@@ -41,7 +41,7 @@
   },
   {
     "name": "AnimatedBuilder",
-    "description": "A general-purpose widget for building animations. AnimatedBuilder is useful for more complex widgets that wish to include an animation as part of a larger build function. To use AnimatedBuilder, simply construct the widget and pass it a builder function.",
+    "description": "A general-purpose widget for building animations. AnimatedBuilder is useful for more complex widgets that wish to include animation as part of a larger build function. To use AnimatedBuilder, simply construct the widget and pass it a builder function.",
     "categories": [
       "Animation and Motion"
     ],
@@ -81,7 +81,6 @@
   },
   {
     "name": "AnimatedListState",
-    "sample": "AnimatedListState",
     "description": "The state for a scrolling container that animates items when they are inserted or removed.",
     "categories": [
       "Animation and Motion"
@@ -162,7 +161,6 @@
   },
   {
     "name": "Appbar",
-    "sample": "AppBar",
     "description": "A Material Design app bar. An app bar consists of a toolbar and potentially other widgets, such as a TabBar and a FlexibleSpaceBar.",
     "categories": [
       "Basics"
@@ -195,7 +193,7 @@
   },
   {
     "name": "BackdropFilter",
-    "description": "A widget that applies a filter to the existing painted content and then paints child. This effect is relatively expensive, especially if the filter is non-local, such as a blur.",
+    "description": "A widget that applies a filter to the existing painted content and then paints a child. This effect is relatively expensive, especially if the filter is non-local, such as a blur.",
     "categories": [
       "Painting and effects"
     ],
@@ -937,7 +935,6 @@
   },
   {
     "name": "IconButton",
-    "sample": "IconButton",
     "description": "An icon button is a picture printed on a Material widget that reacts to touches by filling with color (ink).",
     "categories": [],
     "subcategories": [
@@ -977,6 +974,16 @@
       "Multi-child layout widgets"
     ],
     "link": "https://api.flutter.dev/flutter/widgets/IndexedStack-class.html",
+    "image": "<img alt='' src='/images/catalog-widget-placeholder.png'>"
+  },
+  {
+    "name": "InteractiveViewer",
+    "description": "A widget that enables pan and zoom interactions with its child.",
+    "categories": [],
+    "subcategories": [
+      "Touch interactions"
+    ],
+    "link": "https://api.flutter.dev/flutter/widgets/InteractiveViewer-class.html",
     "image": "<img alt='' src='/images/catalog-widget-placeholder.png'>"
   },
   {
@@ -1051,7 +1058,6 @@
   },
   {
     "name": "ListView",
-    "sample": "ListView",
     "description": "A scrollable, linear list of widgets. ListView is the most commonly used scrolling widget. It displays its children one after another in the scroll direction. In the cross axis, the children are required to fill the ListView.",
     "categories": [
       "Scrolling"
@@ -1104,7 +1110,7 @@
   },
   {
     "name": "Navigator",
-    "description": "A widget that manages a set of child widgets with a stack discipline. Many apps have a navigator near the top of their widget hierarchy in order to display their logical history using an Overlay with the most recently visited pages visually on top of the older pages. Using this pattern lets the navigator visually transition from one page to another by moving the widgets around in the overlay. Similarly, the navigator can be used to show a dialog by positioning the dialog widget above the current page.",
+    "description": "A widget that manages a set of child widgets with a stack discipline. Many apps have a navigator near the top of their widget hierarchy to display their logical history using an Overlay with the most recently visited pages visually on top of the older pages. Using this pattern lets the navigator visually transition from one page to another by moving the widgets around in the overlay. Similarly, the navigator can be used to show a dialog by positioning the dialog widget above the current page.",
     "categories": [],
     "subcategories": [
       "Routing"
@@ -1206,7 +1212,6 @@
   },
   {
     "name": "PopupMenuButton",
-    "sample": "PopupMenuButton",
     "description": "Displays a menu when pressed and calls onSelected when the menu is dismissed because an item was selected.",
     "categories": [],
     "subcategories": [
@@ -1321,7 +1326,6 @@
   },
   {
     "name": "Scaffold",
-    "sample": "Scaffold",
     "description": "Implements the basic Material Design visual layout structure. This class provides APIs for showing drawers, snack bars, and bottom sheets.",
     "categories": [
       "Basics"
@@ -1518,7 +1522,6 @@
   },
   {
     "name": "TabBar",
-    "sample": "TabBar",
     "description": "A Material Design widget that displays a horizontal row of tabs.",
     "categories": [],
     "subcategories": [
@@ -1529,7 +1532,6 @@
   },
   {
     "name": "TabBarView",
-    "sample": "TabBarView",
     "description": "A page view that displays the widget which corresponds to the currently selected tab. Typically used in conjunction with a TabBar.",
     "categories": [],
     "subcategories": [

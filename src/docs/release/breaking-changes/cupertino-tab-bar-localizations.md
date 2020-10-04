@@ -6,12 +6,12 @@ description: In order to provide locale appropriate semantics, the CupertinoTabB
 ## Summary
 
 Instances of `CupertinoTabBar` must have a `Localizations`parent in order to provide a localized
-`Semantics` hint. Trying to instantiate  a `CupertinoTabBar` without localizations will
-result in an assertion such as the following:
+`Semantics` hint. Trying to instantiate  a `CupertinoTabBar` without localizations 
+results in an assertion such as the following:
        
 ```
 CupertinoTabBar requires a Localizations parent in order to provide an appropriate Semantics hint
-for tab indexing. A CupertinoApp will provide the DefaultCupertinoLocalizations, or you can
+for tab indexing. A CupertinoApp provides the DefaultCupertinoLocalizations, or you can
 instantiate your own Localizations.
 'package:flutter/src/cupertino/bottom_tab_bar.dart':
 Failed assertion: line 213 pos 7: 'localizations != null'
@@ -26,8 +26,8 @@ Before this change, the `Semantics` hint provided to the `CupertinoTabBar` was a
 String to 'Tab $index of $total' in English.
 
 If your `CupertinoTabBar` is within the scope of a `CupertinoApp`, the
-`DefaultCupertinoLocalizations` will already be instantiated and may suit your needs without having
-to make a change to your existing code.
+`DefaultCupertinoLocalizations` is already instantiated and may suit your
+needs without having to make a change to your existing code.
 
 If your `CupertinoTabBar` is not within a `CupertinoApp`, you may provide the localizations of
 your choosing using the `Localizations` widget.
@@ -53,11 +53,11 @@ class Foo extends StatelessWidget {
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(CupertinoIcons.add_circled),
-            title: Text('Tab 1'),
+            label: 'Tab 1',
           ),
           BottomNavigationBarItem(
             icon: Icon(CupertinoIcons.add_circled_solid),
-            title: Text('Tab 2'),
+            label: 'Tab 2',
           ),
         ],
         currentIndex: 1,
@@ -82,11 +82,11 @@ class Foo extends StatelessWidget {
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(CupertinoIcons.add_circled),
-            title: Text('Tab 1'),
+            label: 'Tab 1',
           ),
           BottomNavigationBarItem(
             icon: Icon(CupertinoIcons.add_circled_solid),
-            title: Text('Tab 2'),
+            label: 'Tab 2',
           ),
         ],
         currentIndex: 1,
@@ -118,11 +118,11 @@ class Foo extends StatelessWidget {
           items: const <BottomNavigationBarItem>[
             BottomNavigationBarItem(
               icon: Icon(CupertinoIcons.add_circled),
-              title: Text('Tab 1'),
+              label: 'Tab 1',
             ),
             BottomNavigationBarItem(
               icon: Icon(CupertinoIcons.add_circled_solid),
-              title: Text('Tab 2'),
+              label: 'Tab 2',
             ),
           ],
           currentIndex: 1,
