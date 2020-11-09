@@ -86,15 +86,8 @@ Verify the most important settings.
 In the **Identity** section:
 
 `Display Name`
-: Runner
+: The display name of your app.
 
-{{site.alert.note}}
-  Flutter versions prior to 1.18.0-10.0.pre
-  do not support changing the display name
-  to anything other than `Runner`. For more
-  information, see [Issue 41793][].
-{{site.alert.end}}
-  
 `Bundle Identifier`
 : The App ID you registered on App Store Connect.
 
@@ -111,9 +104,9 @@ In the **Signing & Capabilities** section:
   account. If required, select **Add Account...**,
   then update this setting.
 
-In the **Deployment Info** section:
+In the **Build Settings** section:
 
-`Deployment Target:`
+`iOS Deployment Target`
 : The minimum iOS version that your app supports.
   Flutter supports iOS 8.0 and later. If your app includes
   Objective-C or Swift code that makes use of APIs that
@@ -127,10 +120,10 @@ the following:
 For a detailed overview of app signing, see
 [Create, export, and delete signing certificates][appsigning].
 
-## Updating the app's name
-
-In the main view sidebar, select the `Info.plist` file.
-Rename the **Bundle name** field.
+## Updating the app's deployment version
+If you changed `Deployment Target` in your Xcode project,
+open `ios/Flutter/AppframeworkInfo.plist` in your Flutter app
+and update the `MinimumOSVersion` value to match.
 
 ## Updating the app's version number
 
@@ -189,7 +182,7 @@ In Xcode, configure the app version and build:
 
 1. In Xcode, open `Runner.xcworkspace` in your app's `ios` folder.
 1. Select **Product > Scheme > Runner**.
-1. Select **Product > Destination > Generic iOS Device**.
+1. Select **Product > Destination > Any iOS Device**.
 1. Select **Runner** in the Xcode project navigator, then select the
    **Runner** target in the settings view sidebar.
 1. In the Identity section, update the **Version** to the user-facing
@@ -283,6 +276,5 @@ detailed overview of the process of releasing an app to the App Store.
 [distributionguide_submit]: https://help.apple.com/xcode/mac/current/#/dev067853c94
 [distributionguide_testflight]: https://help.apple.com/xcode/mac/current/#/dev2539d985f
 [distributionguide_upload]: https://help.apple.com/xcode/mac/current/#/dev442d7f2ca
-[Issue 41793]: {{site.github}}/flutter/flutter/issues/41793
 [obfuscating your Dart code]: /docs/deployment/obfuscate
 [TestFlight]: https://developer.apple.com/testflight/

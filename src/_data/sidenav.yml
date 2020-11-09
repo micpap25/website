@@ -227,10 +227,12 @@
         - title: Flutter SDK
           permalink: /docs/development/tools/sdk
           children:
+            - title: Overview
+              permalink: /docs/development/tools/sdk/overview
             - title: Upgrading
               permalink: /docs/development/tools/sdk/upgrading
             - title: Releases
-              permalink: /docs/development/tools/sdk/archive
+              permalink: /docs/development/tools/sdk/releases
             - title: Breaking changes
               permalink: /docs/release/breaking-changes
             - title: Release notes
@@ -271,6 +273,8 @@
       permalink: /docs/testing/oem-debuggers
     - title: Flutter's build modes
       permalink: /docs/testing/build-modes
+    - title: Common Flutter errors
+      permalink: /docs/testing/common-errors
     - title: Handling errors
       permalink: /docs/testing/errors
     - title: Testing
@@ -355,5 +359,7 @@
       permalink: /docs/reference/widgets
     - title: API reference
       permalink: https://api.flutter.dev
+    - title: flutter CLI reference
+      permalink: /docs/reference/flutter-cli
     - title: Package site
       permalink: https://pub.dev/flutter

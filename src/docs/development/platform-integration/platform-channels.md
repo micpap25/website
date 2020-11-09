@@ -47,7 +47,7 @@ Messages are passed between the client (UI)
 and host (platform) using platform
 channels as illustrated in this diagram:
 
-![Platform channels architecture](/images/PlatformChannels.png)
+![Platform channels architecture](/images/PlatformChannels.png){:width="100%"}
 
 Messages and responses are passed asynchronously,
 to ensure the user interface remains responsive.
@@ -199,7 +199,7 @@ state in a string, and a button for refreshing the value.
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            RaisedButton(
+            ElevatedButton(
               child: Text('Get Battery Level'),
               onPressed: _getBatteryLevel,
             ),
